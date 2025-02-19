@@ -20,7 +20,7 @@ android {
     }
 }
 repositories {  // <--- This is where repositories for the library go
-    google()       // Google's repository (essential for AppCompat)
+    maven { url "https://maven.google.com" }      // Google's repository (essential for AppCompat)
     mavenCentral() // Maven Central (commonly used)
     maven { url 'https://jitpack.io' }
 }
