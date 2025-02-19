@@ -1,24 +1,17 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+}
 
 buildscript {
     repositories {
         jcenter()
+        google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.github.novoda:bintray-release:master-e1eca2c'
     }
 }
-
-publish {
-    userOrg = 'skyfe79'
-    groupId = 'kr.pe.burt.android.lib'
-    artifactId = 'faimageview'
-    publishVersion = '0.0.8'
-    desc = 'FAImageView is a Frame Animation ImageView for Android. You can set multiple frame images and start frame animation like UIImageView in iOS'
-    website = 'https://github.com/skyfe79/FAImageView'
-}
-
-
 
 android {
     compileSdkVersion 23
