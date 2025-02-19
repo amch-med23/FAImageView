@@ -1,17 +1,6 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.github.novoda:bintray-release:master-e1eca2c'
-    }
-}
-
 plugins {
     id 'com.android.library'
 }
-
-
 
 android {
     compileSdkVersion 23
