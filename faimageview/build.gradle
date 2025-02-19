@@ -1,8 +1,6 @@
 buildscript {
     repositories {
         jcenter()
-        google()
-        mavenCentral()
     }
     dependencies {
         classpath 'com.github.novoda:bintray-release:master-e1eca2c'
