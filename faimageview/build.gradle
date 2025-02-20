@@ -19,13 +19,14 @@ android {
     }
 }
 repositories {
+    flatDir {
+        dirs 'libs' // Module-level libs directory inside faimageview/
+    }
     jcenter()    // <--- This is where repositories for the library go
     maven { url "https://maven.google.com" }      // Google's repository (essential for AppCompat)
     mavenCentral() // Maven Central (commonly used)
     maven { url 'https://jitpack.io' }
-    flatDir {
-        dirs 'libs' // Module-level libs directory inside faimageview/
-    }
+    
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.aar'])
