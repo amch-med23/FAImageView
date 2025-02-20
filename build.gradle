@@ -18,6 +18,9 @@ allprojects {
         mavenCentral()
         maven { url 'https://jitpack.io' }
         maven { url 'https://maven.google.com'}
+        flatDir {
+            dirs 'libs'  // Root-level directory for any .aar file
+        }
     }
 }
 
